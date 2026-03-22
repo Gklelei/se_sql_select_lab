@@ -115,3 +115,5 @@ df_day_month_year = pd.read_sql(
     """,
     conn,
 )
+
+conn.close()
