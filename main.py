@@ -74,7 +74,7 @@ df_name_length = pd.read_sql(
 df_short_title = pd.read_sql(
     """
     SELECT 
-    SUBSTRING(jobTitle, 1,2) as short_title
+    SUBSTR(jobTitle, 1,2) as short_title
     FROM employees;
     """,
     conn,
